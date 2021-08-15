@@ -37,7 +37,18 @@ console.log(supplyChanges);
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
-console.log('6. Showing supplyChanges...');
+//     console.log('6. Showing supplyChanges...');
+
+for (let i = 0; i < supplyChanges.length; i++) {
+    let x = supplyChanges[i];
+    if (x > 0 ) {
+        console.log(`Added ${x} parts`);
+    } else if (x === 0) {
+        console.log('No Change');
+    } else {
+        console.log(`Removed ${x} parts` );
+    }
+}
 
 
 // STRETCH GOALS
@@ -48,7 +59,30 @@ console.log('7. Showing supplyChanges with "for of" loop');
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
+let j = 0
+while (j < supplyChanges.length) {
+    let x = supplyChanges[j];
+    if (x > 0 ) {
+        console.log(`Added ${x} parts`);
+    } else if (x === 0) {
+        console.log('No Current Change');
+    } else {
+        console.log(`Removed ${x} parts` );
+    } 
+    j++;
+}
+
+// Syntax example for doing 'while loop'
+// let i = 0;
+// while (i < 3) { // shows 0, then 1, then 2
+//   alert( i );
+//   i++;
+// }
+
+
+
+
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
-console.log('9. Total supplies available is:');
+console.log('9. Total supplies available is:')
