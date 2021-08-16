@@ -37,7 +37,7 @@ console.log(supplyChanges);
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
-//     console.log('6. Showing supplyChanges...');
+console.log('6. Showing supplyChanges...');
 
 for (let i = 0; i < supplyChanges.length; i++) {
     let x = supplyChanges[i];
@@ -56,6 +56,11 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
 
+for (const coolPartsNum of supplyChanges) {
+    console.log('Coolest Part #', coolPartsNum);
+}
+
+
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
@@ -72,17 +77,25 @@ while (j < supplyChanges.length) {
     j++;
 }
 
-// Syntax example for doing 'while loop'
-// let i = 0;
-// while (i < 3) { // shows 0, then 1, then 2
-//   alert( i );
-//   i++;
-// }
-
-
-
-
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:')
+
+
+
+let sum = 0
+
+for (let i = 0; i < supplyChanges.length; i++) {
+    sum += supplyChanges[i];
+}
+console.log(sum);
+
+// Example of sum of an array
+// const array = [1, 2, 3, 4];
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+// }
+// console.log(sum);
