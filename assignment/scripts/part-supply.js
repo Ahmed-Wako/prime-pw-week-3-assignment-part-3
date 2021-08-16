@@ -87,15 +87,7 @@ console.log('9. Total supplies available is:')
 let sum = 0
 
 for (let i = 0; i < supplyChanges.length; i++) {
-    sum += supplyChanges[i];
+    sum = supplyChanges[i];
 }
 console.log(sum);
 
-// Example of sum of an array
-// const array = [1, 2, 3, 4];
-// let sum = 0;
-
-// for (let i = 0; i < array.length; i++) {
-//     sum += array[i];
-// }
-// console.log(sum);
